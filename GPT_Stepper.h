@@ -21,8 +21,8 @@
 #ifndef GPT3_STEPPER_H
 #define GPT3_STEPPER_H
 
-#if !defined(ARDUINO_UNOR4_WIFI)
-#error This library is only supported on the UNO-R4-WiFi at this time.  It does not support older UNO boards.
+#if !(defined(ARDUINO_UNOR4_WIFI) || defined(ARDUINO_UNOR4_MINIMA))
+#error This library is only supported on the UNO-R4-WiFi at this time. It does not support older UNO boards.
 #endif
 
 #include "Arduino.h"
